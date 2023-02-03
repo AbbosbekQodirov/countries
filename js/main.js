@@ -28,19 +28,6 @@ const add = async (url) => {
 };
 add(api);
 
-const mycheck = document.querySelector("#myCheck");
-mycheck.addEventListener("click", () => {
-  myFunction(data);
-});
-
-function myFunction() {
-  let checkBox = document.getElementById("myCheck");
-  if (checkBox.checked == true) {
-    sorted();
-  } else {
-    alert(45615);
-  }
-}
 
 //sort
 function sorted() {
@@ -142,28 +129,3 @@ region.addEventListener("change", () => {
   });
   inputt.value = "";
 });
-
-// const sortCounter = [
-//   {
-//     name: "Titanic",
-//     dob: "1997",
-//     reating: 7,
-//   },
-//   {
-//     name: "Avatar",
-//     dob: "2009",
-//     reating: 6,
-//   },
-//   {
-//     name: "Avangers",
-//     dob: "2020",
-//     reating: 10,
-//   },
-//   {
-//     name: "Forsaj",
-//     dob: "2010",
-//     reating: 9,
-//   },
-// ];
-
-//sort
