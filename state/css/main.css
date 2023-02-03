@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0px 20px;
+}
+.loader{
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100vh;
+    background-color: black !important;
+    background: url(../../loader/preloader-3.gif);
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    color: black;
+    font-size: 50px;
+}
+.active{
+    display: none;
+}
+.img, .info{
+    margin-top: 70px;
+    width: 550px;
+    /* border: 1px solid black; */
+}
+.img{
+    width: 450px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.info{
+    padding: 15px 0px;
+    position: relative;
+}
+.name{
+    font-size: 25px;
+    line-height: 50px;
+    font-weight: bold;
+}
+.img img{
+    width: 100%;
+    border: 1px solid black;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+}
+.about div{
+    width: 40%;
+}
+.about p, .border p{
+    line-height: 25px;
+    font-weight: bold;
+}
+.about p span, .border p span{
+    font-weight: 200;
+}
+.border p span{
+    word-spacing: 50px;
+}
+.border{
+    position: absolute;
+    width: 100%;
+    margin-top: 40px;
+}
